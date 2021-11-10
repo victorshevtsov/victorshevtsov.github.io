@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #2d9cdb;
+  --secondary-color: #6fcf97;
+  --accent-color: #eb5757;
+  --bg-color: black;
+  --primary-bg-color: #333333;
+  --secondary-bg-color: #4f4f4f;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+* + *,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--bg-color);
+  /* width: 1400px; */
+  /* margin: auto; */
+  /* display: flex; */
+  /* border: 1px solid white; */
+  /* justify-content: end; */
+}
+
+body > header {
+  /* position: fixed; */
+  width: 100%;
+  /* width: 1400px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 0.5rem;
+  /* line-height: 1rem; */
+  /* text-decoration: underline; */
+}
+
+.logo > h1 {
+  /* padding: 1rem 1rem 0 1rem; */
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.logo div {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.logo > div::before,
+.logo > div::after {
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.logo > div:before {
+  content: "{";
+}
+
+.logo > div:after {
+  content: "}";
+}
+
+.logo > div > p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1rem;
+}
+
+nav {
+  padding: 1rem 2rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+nav a {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: stretch;
+
+  /* justify-content: space-between; */
+  /* flex-grow: 1 *; */
+  /* border: 1px solid white; */
+}
+
+section > header > h2 {
+  color: var(--secondary-color);
+  text-transform: lowercase;
+  font-weight: 400;
+}
+
+section > header > h2:before {
+  content: "~/";
+  color: var(--accent-color);
+}
+
+section > header > h2:after {
+  content: "/";
+  color: var(--accent-color);
+}
+
+section > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+section > div > ul {
+    flex: 1 1 width;
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  list-style: none;
+  /* gap: 10%; */
+}
+
+section > div > ul > li {
+  /* flex-grow: 1; */
+  border: 1px solid white;
+  background-color: var(--secondary-bg-color);
+}
